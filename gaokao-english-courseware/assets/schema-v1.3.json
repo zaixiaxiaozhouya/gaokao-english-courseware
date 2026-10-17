@@ -1,0 +1,238 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local/gaokao-english/schema-v1.3.json",
+  "title": "高中英语自学课件 · 内容 JSON（schema v1.3）",
+  "description": "唯一真源。结构校验由 90_tools/schema_check.py 完成（零第三方依赖）；业务规则（题号区间、hints 四级连续、七选五答案归属、分值合计）在 90_tools/validate.py。改字段必须先改本文件。",
+  "type": "object",
+  "required": ["schemaVersion", "meta", "passage", "questions"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "string", "enum": ["1.0", "1.1", "1.2", "1.3"] },
+    "meta": { "$ref": "#/$defs/meta" },
+    "passage": { "$ref": "#/$defs/passage" },
+    "glossary": { "type": "array", "description": "本篇生词表（学生版默认显示，画蓝色实线）", "items": { "$ref": "#/$defs/vocabEntry" } },
+    "questions": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/question" } },
+    "seven": { "$ref": "#/$defs/seven" },
+    "review": { "type": "array", "description": "题后回顾（可选）", "items": { "$ref": "#/$defs/review" } },
+    "_provenance": { "type": "object", "description": "生成来源记录（可选，过渡期保留）" },
+    "progress": { "type": "object", "description": "学习档案示例（真正的档案存浏览器，绝不进内容 JSON）" }
+  },
+
+  "$defs": {
+    "meta": {
+      "type": "object",
+      "required": ["docId", "type", "title", "generatedAt"],
+      "additionalProperties": false,
+      "properties": {
+        "docId": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$", "description": "文件名与持久化键都用它：enstudy:<docId>:progress" },
+        "type": { "type": "string", "enum": ["listening", "reading", "seven", "cloze", "grammar", "correction", "writing-app", "writing-cont", "writing-essay", "overview"] },
+        "mode": { "type": "string", "enum": ["student", "teacher"], "default": "student" },
+        "title": { "type": "string", "minLength": 1 },
+        "subtitle": { "type": "string" },
+        "source": { "type": "string", "description": "素材出处；答案靠 AI 推定时必须写明『待核对』" },
+        "paper": { "type": "string", "enum": ["新课标I卷", "新课标II卷", "全国甲卷", "全国乙卷", "其他", "待确认"], "default": "待确认" },
+        "section": { "type": "string" },
+        "generatedAt": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T" },
+        "version": { "type": "string" },
+        "partial": { "type": "boolean", "description": "true = 整卷里只做一节/一篇：题号只校验落在区间内，不校验端点与分值合计" },
+        "collection": {
+          "type": "array",
+          "description": "多篇合集的分篇清单（预留；当前每篇一个独立文档不用）",
+          "items": { "type": "object", "required": ["key"], "properties": { "key": { "type": "string" }, "title": { "type": "string" }, "docId": { "type": "string" } } }
+        }
+      }
+    },
+
+    "passage": {
+      "type": "object",
+      "required": ["blocks"],
+      "additionalProperties": false,
+      "properties": {
+        "blocks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/block" } },
+        "translation": { "type": "array", "description": "逐段中文对照；条数必须等于段落数（1 + br 数，首块不算）", "items": { "type": "string" } },
+        "translationMode": { "type": "string", "enum": ["sentence", "paragraph"] },
+        "sentencePairs": { "type": "array", "description": "逐句对照；原文有空位的题型 en 里必须保留 ______（处数=题数）", "items": { "$ref": "#/$defs/sentencePair" } },
+        "wordIndex": { "type": "object", "description": "词索引：键=原文里出现的词面；虚词不用写（模板 COMMON_LOOK 兜底）", "additionalProperties": { "$ref": "#/$defs/vocabEntry" } },
+        "structure": { "type": "array", "description": "文章结构（分析模式显示）", "items": { "type": "string" } },
+        "culture": { "type": "array", "description": "文化背景（分析模式显示）", "items": { "type": "string" } },
+        "hardSentences": { "type": "array", "description": "长难句（分析模式显示）", "items": { "$ref": "#/$defs/hardSentence" } },
+        "genre": { "type": "string" },
+        "topic": { "type": "string" },
+        "wordCount": { "type": "number" },
+        "paragraphs": {
+          "type": "array",
+          "description": "逐段元信息（标签/作用/段意），不是段数；段数以 blocks 的 br 为准",
+          "items": {
+            "type": "object",
+            "required": ["id"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string" },
+              "label": { "type": "string" },
+              "role": { "type": "string" },
+              "summary": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+
+    "block": {
+      "description": "原文块：p=文本块，gap=空位块；br=true 表示本块开始新的一段",
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["type", "text"],
+          "additionalProperties": false,
+          "properties": { "type": { "const": "p" }, "text": { "type": "string" }, "br": { "type": "boolean" } }
+        },
+        {
+          "type": "object",
+          "required": ["type", "no"],
+          "additionalProperties": false,
+          "properties": { "type": { "const": "gap" }, "no": { "type": "integer" }, "cue": { "type": "string" }, "br": { "type": "boolean" } }
+        }
+      ]
+    },
+
+    "sentencePair": {
+      "type": "object",
+      "required": ["id", "en", "zh"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[sp]\\d+$" },
+        "en": { "type": "string", "minLength": 1 },
+        "zh": { "type": "string", "minLength": 1 }
+      }
+    },
+
+    "vocabEntry": {
+      "type": "object",
+      "required": ["cn"],
+      "additionalProperties": false,
+      "properties": {
+        "ipa": { "type": "string" },
+        "pos": { "type": "string" },
+        "cn": { "type": "string", "minLength": 1 },
+        "eg": { "type": "string" },
+        "base": { "type": "string", "description": "变形词的原型" },
+        "key": { "type": "string" },
+        "word": { "type": "string" },
+        "common": { "type": "boolean", "description": "通用虚词标记（模板里由 COMMON_LOOK 生成，数据里不要写）" }
+      }
+    },
+
+    "hardSentence": {
+      "type": "object",
+      "required": ["en"],
+      "additionalProperties": false,
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "zh": { "type": "string" },
+        "note": { "type": "string", "description": "结构/考点说明（主干、状语、非谓语、从句……）" }
+      }
+    },
+
+    "question": {
+      "type": "object",
+      "required": ["no", "answer", "analysis", "hints"],
+      "additionalProperties": false,
+      "properties": {
+        "no": { "type": "integer", "minimum": 1 },
+        "score": { "type": "number", "exclusiveMinimum": 0 },
+        "stem": { "type": "string" },
+        "stemCn": { "type": "string" },
+        "answer": { "type": "string", "minLength": 1, "description": "选择题=选项 key；填空题=答案本身（多解用 / 分隔）；七选五=单个大写字母" },
+        "analysis": { "type": "string", "minLength": 1 },
+        "hints": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/hint" } },
+        "options": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/option" } },
+        "kind": { "type": "string", "enum": ["choice", "gap", "seven", "cloze", "blank"] },
+        "role": { "type": "string", "description": "七选五里这个空在段落中的作用（小节点题/承接收束/举例展开……）" },
+        "points": { "type": "array", "items": { "$ref": "#/$defs/point" } },
+        "difficulty": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "evidence": { "type": "object", "additionalProperties": false, "properties": { "ids": { "type": "array", "items": { "type": "string" } }, "text": { "type": "string" } } },
+        "tip": { "type": "string" },
+        "blankIndex": { "type": "integer", "description": "多空同句时本题是第几个空（1 起）" },
+        "localNo": { "type": "integer" },
+        "globalNo": { "type": "integer" },
+        "meta": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "cue": { "type": "string", "description": "括号里的提示词，如 (they)" },
+            "fixed": { "type": "boolean" },
+            "fixedPhrase": { "type": "string" }
+          }
+        }
+      }
+    },
+
+    "option": {
+      "type": "object",
+      "required": ["key", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "key": { "type": "string", "minLength": 1 },
+        "text": { "type": "string", "minLength": 1 },
+        "ipa": { "type": "string" },
+        "pos": { "type": "string" },
+        "cn": { "type": "string" },
+        "base": { "type": "string" },
+        "distractorType": {
+          "type": "string",
+          "enum": ["无中生有", "张冠李戴", "偷换概念", "以偏概全", "因果倒置", "时序错误", "程度失当", "正话反说", "语义不符", "逻辑相反", "词汇搭配不当", ""]
+        },
+        "why": { "type": "string" }
+      }
+    },
+
+    "hint": {
+      "type": "object",
+      "required": ["level", "type", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "level": { "type": "integer", "minimum": 1, "maximum": 4 },
+        "type": { "type": "string", "enum": ["point", "evidence", "eliminate", "answer"] },
+        "text": { "type": "string", "minLength": 1 },
+        "ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "point": {
+      "type": "object",
+      "required": ["tag"],
+      "additionalProperties": false,
+      "properties": { "tag": { "type": "string" }, "level": { "type": "integer" } }
+    },
+
+    "seven": {
+      "type": "object",
+      "description": "七选五的 A–G 选项池；题目里不再放 options",
+      "required": ["options"],
+      "additionalProperties": false,
+      "properties": {
+        "options": { "type": "array", "minItems": 7, "maxItems": 7, "items": { "$ref": "#/$defs/sevenOption" } }
+      }
+    },
+
+    "sevenOption": {
+      "type": "object",
+      "required": ["key", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "key": { "type": "string", "enum": ["A", "B", "C", "D", "E", "F", "G"] },
+        "text": { "type": "string", "minLength": 1 },
+        "cn": { "type": "string" },
+        "role": { "type": "string", "description": "正确项 / 干扰-主题不符 / 干扰-语义不通 ……" },
+        "inference": { "type": "string", "description": "为什么能/不能放在某个空（可选）" }
+      }
+    },
+
+    "review": {
+      "type": "object",
+      "required": ["title"],
+      "additionalProperties": false,
+      "properties": { "title": { "type": "string", "minLength": 1 }, "lines": { "type": "array", "items": { "type": "string" } } }
+    }
+  }
+}

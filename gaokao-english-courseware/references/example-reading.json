@@ -1,0 +1,270 @@
+{
+ "schemaVersion": "1.3",
+ "meta": {
+  "docId": "reading-wildcamp",
+  "type": "reading",
+  "mode": "student",
+  "title": "阅读理解 A 篇 · Wild Nature Camp（示例截短版）",
+  "subtitle": "阅读理解（21–23，3 题）",
+  "source": "示例：真实样例的截短版，只用来看字段形状",
+  "paper": "待确认",
+  "section": "阅读理解",
+  "generatedAt": "2026-10-17T14:40:00+08:00",
+  "version": "v0.1"
+ },
+ "passage": {
+  "genre": "应用文（活动公告 / 招募通知）",
+  "topic": "野外自然营招募：目的、活动、规则、费用与报名",
+  "wordCount": 203,
+  "blocks": [
+   {
+    "type": "p",
+    "text": "For teenagers longing to escape from busy school life and reconnect with nature, the Wild Nature Camp is established to build self-independence and environmental awareness. "
+   },
+   {
+    "type": "p",
+    "text": "This summer camp will run from July 18 to July 29, targeting students aged 15 to 17 with basic outdoor living skills. "
+   },
+   {
+    "type": "p",
+    "br": true,
+    "text": "Unlike common summer camps, this camp features wilderness hiking, plant research, eco-camping skills and group challenges, all led by professional instructors. "
+   },
+   {
+    "type": "p",
+    "text": "Every activity is carefully planned to help participants (参与者) step out of their comfort zones and develop problem-solving skills. "
+   },
+   {
+    "type": "p",
+    "br": true,
+    "text": "Expensive electronic devices (设备), such as smart watches, are not encouraged, as they may prevent participants from enjoying outdoor experiences. "
+   },
+   {
+    "type": "p",
+    "text": "Only basic mobile phones are permitted for daily contact with parents. "
+   },
+   {
+    "type": "p",
+    "text": "Second, anyone who fails to follow instructors' orders will be stopped from certain activities. "
+   },
+   {
+    "type": "p",
+    "br": true,
+    "text": "Camp fees include meals, accommodation, training equipment, insurance and activity materials. "
+   },
+   {
+    "type": "p",
+    "text": "However, participants are required to prepare their own daily necessities. "
+   },
+   {
+    "type": "p",
+    "text": "Besides, each participant must hand in a health statement report to prove they are physically fit for long-distance walking and outdoor camping. "
+   },
+   {
+    "type": "p",
+    "br": true,
+    "text": "Registration will close on July 5. "
+   },
+   {
+    "type": "p",
+    "text": "The camp program only accepts 120 participants on a first-come, first-served basis, so early sign-up is highly advised. "
+   },
+   {
+    "type": "p",
+    "text": "Once registration is completed, no fee will be returned for personal reasons."
+   }
+  ],
+  "translation": [
+   "对于渴望逃离繁忙学校生活、重新亲近自然的青少年来说，野外自然营的设立目的就是培养自立能力与环保意识。这个夏令营将于 7 月 18 日至 7 月 29 日举办，面向 15 至 17 岁、具备基本野外生活技能的学生。",
+   "与普通夏令营不同，本营以荒野徒步、植物研究、生态露营技能和团队挑战为特色，全部由专业教练带领。每一项活动都经过精心策划，以帮助参与者走出自己的舒适区、培养解决问题的能力。",
+   "昂贵的电子设备（如智能手表）不受鼓励，因为它们可能使参与者无法尽情享受户外体验。只允许携带普通手机，用于与父母的日常联系。其次，任何不服从教练指令的人将被停止参加某些活动。",
+   "营费包括餐饮、住宿、训练装备、保险和活动材料。但是，参与者需要自备日常生活用品。此外，每位参与者必须上交一份健康声明报告，以证明其身体状况适合长距离徒步与户外露营。",
+   "报名将于 7 月 5 日截止。营地项目仅招收 120 名参与者，按先到先得的原则，因此强烈建议尽早报名。一旦报名完成，因个人原因将不予退费。"
+  ],
+  "translationMode": "paragraph",
+  "sentencePairs": [
+   {
+    "id": "s1",
+    "en": "For teenagers longing to escape from busy school life and reconnect with nature, the Wild Nature Camp is established to build self-independence and environmental awareness.",
+    "zh": "对于渴望逃离繁忙学校生活、重新亲近自然的青少年来说，野外自然营的设立目的就是培养自立能力与环保意识。"
+   },
+   {
+    "id": "s2",
+    "en": "Only basic mobile phones are permitted for daily contact with parents.",
+    "zh": "只允许携带普通手机，用于与父母的日常联系。"
+   }
+  ],
+  "hardSentences": [
+   {
+    "en": "Unlike common summer camps, this camp features wilderness hiking, plant research, eco-camping skills and group challenges, all led by professional instructors.",
+    "zh": "与普通夏令营不同，本营以荒野徒步、植物研究、生态露营技能和团队挑战为特色，全部由专业教练带领。",
+    "note": "主干为 this camp features A, B, C and D，feature 作动词「以……为特色」，后接四个由 and 连接的并列宾语；句首 Unlike common summer camps 是介词短语作比较状语；句末 all led by professional instructors 是独立主格结构（all 指代 all activities），过去分词 led 表被动，补充说明所有活动均由专业教练带领。"
+   }
+  ],
+  "wordIndex": {
+   "teenager": {
+    "ipa": "/ˈtiːneɪdʒə(r)/",
+    "pos": "n.",
+    "cn": "青少年（13–19 岁）",
+    "eg": "For teenagers longing to escape from busy school life 对于渴望逃离繁忙学校生活的青少年"
+   },
+   "long": {
+    "ipa": "/lɒŋ/",
+    "pos": "v.",
+    "cn": "渴望（long to do sth.）",
+    "eg": "longing to escape from busy school life 渴望逃离繁忙的学校生活"
+   },
+   "escape": {
+    "ipa": "/ɪˈskeɪp/",
+    "pos": "v.",
+    "cn": "逃离；摆脱",
+    "eg": "escape from busy school life 逃离繁忙的学校生活"
+   },
+   "busy": {
+    "ipa": "/ˈbɪzi/",
+    "pos": "adj.",
+    "cn": "繁忙的",
+    "eg": "busy school life 繁忙的学校生活"
+   },
+   "school life": {
+    "ipa": "/skuːl laɪf/",
+    "pos": "n.",
+    "cn": "学校生活",
+    "eg": "escape from busy school life 逃离繁忙的学校生活"
+   },
+   "reconnect": {
+    "ipa": "/ˌriːkəˈnekt/",
+    "pos": "v.",
+    "cn": "重新连接；重新亲近",
+    "eg": "reconnect with nature 重新亲近自然"
+   }
+  },
+  "structure": [
+   "体裁：应用文（活动公告 / 招募通知），语篇模式为总—分式：第 1 段总述 + 4 个小标题分述，共 5 段",
+   "第 1 段 · 总述·简介：办营目的（自立 + 环保意识）、营期（7 月 18–29 日）、对象（15–17 岁、有基本野外生活技能）"
+  ],
+  "culture": [
+   "Summer camp（夏令营）：北美延续百余年的传统，中产家庭暑假把孩子送进营地住一到两周，远离城市与电子屏幕，在集体生活中学习独立",
+   "营地通常按年龄分组，本文 targeting students aged 15 to 17 就是典型的「青少年组」"
+  ]
+ },
+ "glossary": [
+  {
+   "key": "teenager",
+   "word": "teenager",
+   "ipa": "/ˈtiːneɪdʒə(r)/",
+   "pos": "n.",
+   "cn": "青少年（13–19 岁）"
+  },
+  {
+   "key": "independence",
+   "word": "independence",
+   "ipa": "/ˌɪndɪˈpendəns/",
+   "pos": "n.",
+   "cn": "独立；自立"
+  },
+  {
+   "key": "awareness",
+   "word": "awareness",
+   "ipa": "/əˈweənəs/",
+   "pos": "n.",
+   "cn": "意识；认识"
+  }
+ ],
+ "questions": [
+  {
+   "no": 21,
+   "globalNo": 21,
+   "localNo": 1,
+   "score": 2.5,
+   "difficulty": 2,
+   "kind": "choice",
+   "stem": "What is the main purpose of the Wild Nature Camp?",
+   "stemCn": "野外自然营的主要目的是什么？",
+   "options": [
+    {
+     "key": "A",
+     "text": "To offer teenagers a chance to make friends.",
+     "ipa": "/meɪk frendz/",
+     "pos": "phr.",
+     "cn": "给青少年提供交朋友的机会",
+     "distractorType": "无中生有",
+     "why": "make friends（交朋友）在原文中无中生有：营地是为渴望逃离繁忙学业、重新亲近自然的青少年而设，并未把交友作为办营目的。"
+    },
+    {
+     "key": "B",
+     "text": "To provide part-time jobs for teenagers in summer.",
+     "ipa": "/ˌpɑːt taɪm ˈdʒɒbz/",
+     "pos": "phr.",
+     "cn": "为青少年提供暑期兼职工作",
+     "distractorType": "张冠李戴",
+     "why": "part-time jobs（兼职工作）并非营地目的；participants 是来参加活动的青少年，不是来打工的。"
+    },
+    {
+     "key": "C",
+     "text": "To train teenagers to become future nature instructors.",
+     "ipa": "/ɪnˈstrʌktəz/",
+     "pos": "n.",
+     "cn": "把青少年培养成未来的自然教练",
+     "distractorType": "偷换概念",
+     "why": "原文的 instructors 是「由专业教练带领活动」的服务方，选项把服务方偷换成「把青少年培养成教练」这一培养目标。"
+    },
+    {
+     "key": "D",
+     "text": "To develop teenagers' self-support and green-awareness.",
+     "ipa": "/ˈɡriːn əˌweənəs/",
+     "pos": "n.",
+     "cn": "培养青少年的自立能力与环保意识",
+     "why": ""
+    }
+   ],
+   "answer": "D",
+   "evidence": {
+    "text": "For teenagers longing to escape from busy school life and reconnect with nature, the Wild Nature Camp is established to build self-independence and environmental awareness."
+   },
+   "analysis": "定位第 1 段「the Wild Nature Camp is established to build self-independence and environmental awareness」——self-independence 即 self-support（自立），environmental awareness 即 green-awareness（环保意识），D 项是原文的同义转述。A、B 两项原文均未提及，C 项则把「由教练带队」说成「培养教练」。",
+   "points": [
+    {
+     "tag": "细节题 · 目的句定位",
+     "level": 2
+    }
+   ],
+   "tip": "看到 established to / aims to / in order to，先圈出 to 后面的动词短语，那往往就是主旨目的题的原句。",
+   "hints": [
+    {
+     "level": 1,
+     "type": "point",
+     "text": "考点方向：细节题问「办营的主要目的」，要回到第 1 段找表目的的不定式（is established to do sth.）。"
+    },
+    {
+     "level": 2,
+     "type": "evidence",
+     "text": "原文定位（第 1 段）：For teenagers longing to escape from busy school life and reconnect with nature, the Wild Nature Camp is established to build self-independence and environmental awareness."
+    },
+    {
+     "level": 3,
+     "type": "eliminate",
+     "text": "A 项 make friends 属无中生有；B 项 part-time jobs 张冠李戴，参与者是来活动的不是来打工的；C 项把「由专业教练带领」偷换成「把青少年培养成教练」。"
+    },
+    {
+     "level": 4,
+     "type": "answer",
+     "text": "答案 D。build self-independence and environmental awareness 中，self-independence = self-support（自立），environmental awareness = green-awareness（环保意识），D 项为原文同义转述。"
+    }
+   ]
+  }
+ ],
+ "review": [],
+ "_provenance": {
+  "sourceFile": "01_source/阅读理解(练习卷二).html",
+  "sourceGroup": "第 1 组（A 篇）· view-quiz / view-structure / view-culture / view-sentences / view-vocab",
+  "sourcePillLabel": "A 篇 Wild Nature Camp · 21–23",
+  "extractedAt": "2026-10-17",
+  "notes": [
+   "原文、题干、选项、答案（21-D / 22-C / 23-B）、解析、结构、文化背景、词汇表全部取自原件 A 篇对应标签页。",
+   "音标为按通行英式音标自行补全，原件词汇表只给了 14 个词条的音标。",
+   "原件 22 题 C 项原文为「Carrying an ordinary mobile phones.」（an 与复数 phones 不一致），为保持与原件一致未作改动。",
+   "阅读理解原文没有空位，故 passage.blocks 只有段落块一种类型（无 gap 块），sentencePairs 为三道题的定位原句、不含填空占位符。"
+  ]
+ }
+}

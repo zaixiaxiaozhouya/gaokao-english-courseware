@@ -1,0 +1,29 @@
+# 本地工作区（卷子素材、构建产物、快照），不进仓库
+01_source/
+03_skill/
+04_workspace/
+90_tools/
+99_backups/
+
+# 注意：01_source/ 里的试卷照片由手机拍摄，画面底部烧录了「拍摄时间 + GPS 坐标」水印，
+# 属于个人信息；本目录已整体排除，不要用 git add -f 或直接打包整个文件夹的方式绕过。
+
+# Python / Node
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
+package-lock.json
+
+# 系统与编辑器
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/

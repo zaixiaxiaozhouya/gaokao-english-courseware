@@ -1,0 +1,341 @@
+{
+ "schemaVersion": "1.3",
+ "meta": {
+  "docId": "seven-futureletter",
+  "type": "seven",
+  "mode": "student",
+  "title": "七选五 · 给未来的自己写一封信（示例截短版）",
+  "subtitle": "七选五（36–40，5 题）",
+  "source": "示例：真实样例的截短版，只用来看字段形状",
+  "paper": "待确认",
+  "section": "七选五",
+  "generatedAt": "2026-10-17T14:40:00+08:00",
+  "version": "v0.1"
+ },
+ "seven": {
+  "options": [
+   {
+    "key": "A",
+    "text": "Answer questions surprisingly.",
+    "cn": "出人意料地回答这些问题。",
+    "role": "干扰-语义不通",
+    "inference": "与 F 项同为“问答”类表达，构成形近争位；但 surprisingly（出人意料地）全篇没有任何呼应词，语义也不通，不能入选。"
+   },
+   {
+    "key": "B",
+    "text": "Talk about what’s going on in your life.",
+    "cn": "聊聊你生活中正在发生的事。",
+    "role": "正确项",
+    "inference": "短祈使句，适合作步骤小标题；what’s going on 与下段 what’s happening in your life 同义，能概括整段。"
+   },
+   {
+    "key": "C",
+    "text": "You can discuss different jobs in your letter.",
+    "cn": "你可以在信里谈论不同的工作。",
+    "role": "干扰-主题不符",
+    "inference": "只讲“工作”一个具体话题，覆盖面太窄；本文讲写信的方法步骤，不涉及职业规划，是话题陷阱。"
+   },
+   {
+    "key": "D",
+    "text": "These hurtful words can prevent self-improvement.",
+    "cn": "这些伤人的话会阻碍自我提升。",
+    "role": "正确项",
+    "inference": "These + 复数名词的指代句，前面必须出现“批评／伤人的话”一类内容；self-improvement 与本文话题直接呼应。"
+   },
+   {
+    "key": "E",
+    "text": "You can write the letter as far into the future as you like.",
+    "cn": "信写给多久之后的自己都可以，随你喜欢。",
+    "role": "正确项",
+    "inference": "as far into the future as you like 与 how far into the future、three months or three years 直接同链。"
+   },
+   {
+    "key": "F",
+    "text": "Consider including questions for your future self in your letter.",
+    "cn": "可以考虑在信里给未来的自己留一些问题。",
+    "role": "正确项",
+    "inference": "questions 与小标题 Ask yourself questions、后句 Ask whether... 呼应，适合放在“问自己问题”这一小节的段首。"
+   },
+   {
+    "key": "G",
+    "text": "You could talk about a project you’ve started that you hope to finish.",
+    "cn": "你可以谈谈自己已经开始、并希望完成的某个项目。",
+    "role": "正确项",
+    "inference": "a project you hope to finish 是“希望达成之事”的具体例子，hope / finish 与 hope / achieved / proud 前后呼应。"
+   }
+  ]
+ },
+ "passage": {
+  "genre": "说明文（步骤说明）",
+  "topic": "如何给未来的自己写一封信",
+  "wordCount": 267,
+  "blocks": [
+   {
+    "type": "p",
+    "text": "If you’re interested in writing a letter to your future self, but don’t know where to start, here are some steps you can take:",
+    "br": true
+   },
+   {
+    "type": "p",
+    "text": "Decide how far into the future you want to read your letter.",
+    "br": true
+   },
+   {
+    "type": "p",
+    "text": "The content of any letter depends on the reader. The content of your letter to your future self might change depending on whether you’re writing for someone three months or three years into the future. ",
+    "br": true
+   },
+   {
+    "type": "gap",
+    "no": 36,
+    "cue": ""
+   },
+   {
+    "type": "p",
+    "text": " You can also write several letters to different future selves. "
+   },
+   {
+    "type": "gap",
+    "no": 37,
+    "cue": "",
+    "br": true
+   },
+   {
+    "type": "p",
+    "text": "As you write the content of your letter, provide context for your future self. Consider dating the letter and including a summary of what’s happening in your life. If you’re writing your letter for self-improvement, it’s important to note where you’re starting from.",
+    "br": true
+   },
+   {
+    "type": "p",
+    "text": "Express your hopes.",
+    "br": true
+   },
+   {
+    "type": "p",
+    "text": "Talk about what you hope your future self has achieved. ",
+    "br": true
+   },
+   {
+    "type": "gap",
+    "no": 38,
+    "cue": ""
+   },
+   {
+    "type": "p",
+    "text": " When you read the letter in the future, your words might make you feel proud because you’ve achieved what was important to you."
+   },
+   {
+    "type": "p",
+    "text": "Ask yourself questions. ",
+    "br": true
+   },
+   {
+    "type": "gap",
+    "no": 39,
+    "cue": "",
+    "br": true
+   },
+   {
+    "type": "p",
+    "text": " Ask whether you got closer to a new friend, or if something you were looking forward to happened. These can also add context for your future self about what was important to you when you wrote the letter."
+   },
+   {
+    "type": "p",
+    "text": "Express gratitude and kindness for yourself.",
+    "br": true
+   },
+   {
+    "type": "p",
+    "text": "Finally, remember to include words of kindness and support for your future self. Your reader, whoever and wherever they are, may need to hear them. You never know where you’ll be when you finally read the letter, and hearing that you’re cared for and loved can help you stay positive. Try not to include criticism about yourself in the letter. ",
+    "br": true
+   },
+   {
+    "type": "gap",
+    "no": 40,
+    "cue": ""
+   }
+  ],
+  "translation": [
+   "如果你有兴趣给未来的自己写一封信，却不知从何写起，下面这些步骤可以照着做：",
+   "先决定你想让这封信在多久之后被读到。",
+   "任何一封信的内容都取决于读者。写给未来自己的信，内容会随你是在写给三个月后的自己还是三年后的自己而不同。（第 36 空）你也可以给不同的未来自己写好几封信。",
+   "（第 37 空：这一步的小标题单独成段。）",
+   "写信时，要为未来的自己交代背景：可以考虑给信标上日期，并写一段你当下生活的概述。如果这封信是为了自我提升，那么记下你的起点很重要。",
+   "表达你的期望。",
+   "说说你希望未来的自己已经达成了什么。（第 38 空）将来读这封信时，这些话或许会让你因为达成了对自己重要的事而感到自豪。",
+   "问自己一些问题。",
+   "（第 39 空）问问自己是否和某个新朋友更亲近了，或者你期待的事情有没有发生。这些也能为未来的自己交代背景——让他知道你写信时什么最要紧。",
+   "对自己表达感激与善意。",
+   "最后，记得给未来的自己写下善意和支持的话。你的读者——无论他是谁、身在何处——或许都需要听到这些话。你无法预知最终读信时自己身在何处，而知道自己被关心、被爱着，能帮你保持积极。尽量不要在信里写下对自己的批评。（第 40 空）"
+  ],
+  "translationMode": "paragraph",
+  "sentencePairs": [
+   {
+    "id": "s1",
+    "en": "If you’re interested in writing a letter to your future self, but don’t know where to start, here are some steps you can take:",
+    "zh": "如果你有兴趣给未来的自己写一封信，却不知从何写起，下面这些步骤可以照着做："
+   },
+   {
+    "id": "s2",
+    "en": "Decide how far into the future you want to read your letter.",
+    "zh": "先决定你想让这封信在多久之后被读到。"
+   }
+  ],
+  "wordIndex": {
+   "achieve": {
+    "ipa": "/əˈtʃiːv/",
+    "pos": "v.",
+    "cn": "达成；取得（成绩）",
+    "eg": "what you hope your future self has achieved 你希望未来的自己已经取得的东西"
+   },
+   "add": {
+    "ipa": "/æd/",
+    "pos": "v.",
+    "cn": "增添；补充",
+    "eg": "These can also add context for your future self 这些也能为未来的自己补充背景"
+   },
+   "answer": {
+    "ipa": "/ˈɑːnsə(r)/",
+    "pos": "v.",
+    "cn": "回答",
+    "eg": "Answer questions surprisingly.（干扰项 A 用语）出人意料地回答问题。"
+   },
+   "as far into the future as you like": {
+    "ipa": "/əz ˈfɑːr ˈɪntə ðə ˈfjuːtʃər əz juː laɪk/",
+    "pos": "短语",
+    "cn": "信写给多久之后的自己都可以（as ... as you like 随你喜欢）",
+    "eg": "You can write the letter as far into the future as you like."
+   },
+   "ask": {
+    "ipa": "/ɑːsk/",
+    "pos": "v.",
+    "cn": "问；询问",
+    "eg": "Ask whether you got closer to a new friend 问问自己是否和某个新朋友更亲近了"
+   },
+   "care": {
+    "ipa": "/keə(r)/",
+    "pos": "v.",
+    "cn": "关心；在乎（be cared for 被关心）",
+    "eg": "hearing that you’re cared for and loved 知道自己被关心、被爱着"
+   }
+  },
+  "structure": [
+   "第 1 段（总起）：不知从何下笔？here are some steps you can take 直接预告下文按步骤展开，全文是“总起＋分步说明”。",
+   "第 2–3 段（步骤一·定时间跨度）：小标题先定“信写给多久之后的自己”；本段说明内容随三个月／三年而变，再用一句“也可以写给多个未来的自己”收尾（第 36 空）。"
+  ]
+ },
+ "glossary": [
+  {
+   "key": "future",
+   "word": "future",
+   "ipa": "/ˈfjuːtʃə(r)/",
+   "pos": "n.",
+   "cn": "未来；将来"
+  },
+  {
+   "key": "interested",
+   "word": "interested",
+   "ipa": "/ˈɪntrəstɪd/",
+   "pos": "adj.",
+   "cn": "感兴趣的（be interested in）"
+  },
+  {
+   "key": "step",
+   "word": "step",
+   "ipa": "/step/",
+   "pos": "n.",
+   "cn": "步骤"
+  }
+ ],
+ "questions": [
+  {
+   "no": 36,
+   "globalNo": 36,
+   "localNo": 1,
+   "score": 2.5,
+   "difficulty": 3,
+   "kind": "seven",
+   "stem": "（第 36 题）",
+   "role": "语义呼应",
+   "evidence": {
+    "text": "The content of your letter to your future self might change depending on whether you’re writing for someone three months or three years into the future. ______ You can also write several letters to different future selves."
+   },
+   "answer": "E",
+   "analysis": "第 36 空在本段中部，空前后讲的是同一件事的两个侧面。前文 how far into the future you want to read your letter 与 three months or three years into the future 反复出现“时间跨度”这条线，E 项 You can write the letter as far into the future as you like 用 as far into the future as you like 直接重申它，并把话推进一层——写给多久之后都行；紧接着的 You can also write several letters to different future selves 又顺着“写给不同时间的自己”继续往下走，衔接自然。其余六项：A 项 surprisingly 全篇无呼应、语义不通；B 项 Talk about what’s going on in your life 是第 37 空那一步的小标题；C 项只谈 jobs，本文不涉及职业规划，覆盖面太窄；D 项 These hurtful words 要求上文出现可回指的“批评类的话”，本段没有；F 项“给未来的自己留问题”属“问自己问题”那一步；G 项“谈项目”是第 38 空的内容。",
+   "points": [
+    {
+     "tag": "七选五/同指词链",
+     "level": 2
+    }
+   ],
+   "tip": "段中空先找同指词链：how far into the future、three months or three years 与 as far ... as you like 说的是同一件事。",
+   "hints": [
+    {
+     "level": 1,
+     "type": "point",
+     "text": "段中空·同指词链：先找出与前文重复出现的“时间跨度”表达，再判断哪一项在接着说这件事。"
+    },
+    {
+     "level": 2,
+     "type": "evidence",
+     "text": "空前后原句：The content of your letter to your future self might change depending on whether you’re writing for someone three months or three years into the future. ______ You can also write several letters to different future selves."
+    },
+    {
+     "level": 3,
+     "type": "eliminate",
+     "text": "A 项 surprisingly 全篇无呼应、语义不通；B 项是下一步的小标题；C 项 jobs 范围太窄；D 项 These hurtful words 找不到复数先行词；F、G 分别属于后两步，位置不对。"
+    },
+    {
+     "level": 4,
+     "type": "answer",
+     "text": "答案 E。as far into the future as you like 与 how far into the future、three months or three years 同链，后句“也可以写好几封”继续沿着这条线说。"
+    }
+   ]
+  }
+ ],
+ "review": [
+  {
+   "title": "核心单词·短语·句型",
+   "lines": [
+    "as far into the future as you like 想写到多久之后都可以（as ... as you like 结构，第 36 空解题关键）。",
+    "go on 发生、进行（what’s going on in your life = 你生活中正在发生的事，第 37 空的小标题）。",
+    "provide context for 为……提供背景信息；note where you’re starting from 记下你的起点。",
+    "self-improvement n. 自我提升（self- 前缀系列：self-care 自我照顾、self-doubt 自我怀疑）。",
+    "express one’s hopes 表达期望；achieve v. 达成、实现（achievement n. 成就）。",
+    "look forward to doing sth. 期待做某事（to 是介词，本篇 something you were looking forward to happened）。",
+    "prevent 阻碍、阻止；criticism n. 批评（criticize v. 批评，第 40 空线索词）。",
+    "句型：Consider doing sth. 考虑做某事；Try not to do sth. 尽量不要做某事；These + 复数名词 指代前文。"
+   ]
+  },
+  {
+   "title": "考点逻辑关系",
+   "lines": [
+    "第 36 空：时间跨度呼应。how far into the future／three months or three years 与 as far into the future as you like 同链。",
+    "第 37 空：标题概括。空格作小标题，统摄下文“标日期＋当下生活概述＋起点”。",
+    "第 38 空：举例呼应。a project you hope to finish 呼应 hope your future self has achieved、feel proud because you’ve achieved。",
+    "第 39 空：段首接题。questions 对应小标题 Ask yourself questions 与后句 Ask whether...。",
+    "第 40 空：指代与后果。These hurtful words 回指 criticism about yourself，prevent self-improvement 说明原因。"
+   ]
+  },
+  {
+   "title": "本篇解题方法",
+   "lines": [
+    "本文是“总起＋分步”的步骤说明文：每个加粗小标题就是一步，先看小标题再判断该段的空格。",
+    "小标题空（第 37 空）用“下文反推法”：下文列举日期、近况、起点等信息，谁能概括整段就选谁。",
+    "小标题下的段落空（第 39 空）用“接题法”：标题问什么，段首就写什么，后文再补具体例子。",
+    "语义链锁答案：hope—hope to finish—proud；criticism—hurtful words—self-improvement。",
+    "排除“单点话题”干扰项：C 项只讲 jobs，覆盖面太窄，概括不了整段，直接排除。"
+   ]
+  },
+  {
+   "title": "本篇避坑注意事项",
+   "lines": [
+    "A 项 Answer questions surprisingly 与 F 项同为“问答”类表达，构成形近干扰；但 surprisingly 全篇无呼应、语义不通，不能选。",
+    "C 项 jobs 看似与“未来”相关（未来职业），但本文讲的是写信方法，不是职业规划，属话题陷阱。",
+    "E 项讲时间跨度，只能放第 36 空；放进第 37 空会把小标题写歪——小标题必须概括全段。",
+    "D 项 These hurtful words 需要可回指的前文，只有第 40 空前句出现 criticism，别提前误用。",
+    "B 项虽含 life，但第 38、39 空讲的是 hopes 与 questions，别因“生活”一词笼统而误填。"
+   ]
+  }
+ ]
+}

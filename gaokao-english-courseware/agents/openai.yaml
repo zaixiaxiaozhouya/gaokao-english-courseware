@@ -1,0 +1,14 @@
+# Codex 专用元数据（可选）。SKILL.md 的 frontmatter 仍是唯一真源，
+# 这里只放 Codex 的界面展示与调用策略，不重复 name/description。
+interface:
+  display_name: 高考英语自学课件
+  short_description: 把阅读/七选五/完形/语法填空做成单文件学生课件：作答判分、四级提示、划词查词、中英对照、学习档案、打印。
+  brand_color: "#2563EB"
+  default_prompt: 把这篇高考英语阅读做成学生自学课件
+
+policy:
+  # true：描述命中即可隐式触发；false：只能显式点名调用
+  allow_implicit_invocation: true
+
+dependencies:
+  tools: []
