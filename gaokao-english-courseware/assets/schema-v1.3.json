@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://local/gaokao-english/schema-v1.3.json",
   "title": "高中英语自学课件 · 内容 JSON（schema v1.3）",
-  "description": "唯一真源。结构校验由 90_tools/schema_check.py 完成（零第三方依赖）；业务规则（题号区间、hints 四级连续、七选五答案归属、分值合计）在 90_tools/validate.py。改字段必须先改本文件。",
+  "description": "唯一真源。结构校验由 scripts/schema_check.py 完成（零第三方依赖）；业务规则（题号区间、hints 四级连续、七选五答案归属、分值合计）在 scripts/validate.py。改字段必须先改本文件。",
   "type": "object",
   "required": ["schemaVersion", "meta", "passage", "questions"],
   "additionalProperties": false,

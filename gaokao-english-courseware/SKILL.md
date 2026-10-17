@@ -3,7 +3,7 @@ name: gaokao-english-courseware
 description: Use when turning 高考英语 exam material into a student self-study single-file HTML courseware — 阅读理解、七选五、完形填空、语法填空，含作答判分、四级提示、全量划词查词、中文对照、学习档案、打印样式。也用于初始化新工作区、生成 schema 合法的数据骨架、给已有课件补词表/补译文/修排版，或一条命令跑全部门禁（schema/validate/coverage/audit/build/smoke）并交付。
 license: MIT
 metadata:
-  version: "1.1.0"
+  version: "0.1.0"
   data-model: schema-v1.3
   language: zh-CN
 ---

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """把 overlays/<docId>.analysis.json 里的「逐句对照」与「全篇词表」合并进 examples/<docId>.json。
 
-overlay 结构（由生成期产出，见 02_docs/08-双模式设计（做题·分析）.md §4）：
+overlay 结构（由生成期产出，字段说明见 references/schema.md「三种 overlay」）：
     { "sentencePairs": [ {"id":"s1","en":"...","zh":"..."} ], "wordIndex": { "word": {"ipa","pos","cn","eg"} } }
 
 合并结果写入 passage.sentencePairs 与 passage.wordIndex，并把 schemaVersion 升到 SCHEMA_VERSION（当前 1.3）。
